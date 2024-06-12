@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint:ts": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "lint:ts:fix": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",    "preview": "vite preview"
+    "lint:ts:fix": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
+    "lint:styles": "npx stylelint \"**/*.css\" \"!dist/**\"",
+    "lint:styles:fix": "npx stylelint \"**/*.css\" \"!dist/**\" --fix",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -23,6 +26,8 @@
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard": "^36.0.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   },
