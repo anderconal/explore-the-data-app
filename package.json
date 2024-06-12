@@ -13,6 +13,7 @@
     "lint:styles": "npx stylelint \"**/*.css\" \"!dist/**\"",
     "lint:styles:fix": "npx stylelint \"**/*.css\" \"!dist/**\" --fix",
     "test": "npx vitest",
+    "test:run": "npx vitest run",
     "prepare": "npx husky install"
   },
   "dependencies": {
